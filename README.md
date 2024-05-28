@@ -59,3 +59,9 @@
 
    - **Description:** 
      - `ta_slot_assignment/3` succeeds if `RemTAs` is the list of TA structures resulting from updating the load of TA `Name` in `TAs`.
+
+## Sample testing
+```prolog
+?- week_schedule([[1, 1, 2, 1, 0], [0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 2, 0, 0, 0], [0, 2, 1, 1, 0], [1, 0, 1, 1, 1]],
+                 [ta(k, 8), ta(m, 4), ta(n, 3)], 3, WeekSched).
+```
